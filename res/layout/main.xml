@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg_view"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView android:id="@+id/sky"
+        android:src="@drawable/sky"
+        android:layout_width="fill_parent"
+        android:layout_height="275dip"
+        android:scaleType="fitXY"/>
+
+    <ImageView android:id="@+id/grass"
+        android:src="@drawable/grass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sky"
+        android:scaleType="fitXY"/>
+
+    <ImageView android:id="@+id/duck"
+        android:src="@drawable/duck"
+        android:scaleType="fitXY"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_centerInParent="true"/>
+
+    <EditText android:id="@+id/long_url"
+        android:hint="http://example.com"
+        android:layout_below="@id/duck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/create_btn"
+        android:text="Shorten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/long_url"
+        android:layout_marginRight="3dip"
+        android:padding="5dip"
+        android:background="#BBBBBB"
+        android:layout_centerHorizontal="true"/>
+
+    <Button android:id="@+id/reset_btn"
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/long_url"
+        android:padding="5dip"
+        android:layout_toRightOf="@id/create_btn"
+        android:background="#BBBBBB"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
